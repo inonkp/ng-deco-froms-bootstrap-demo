@@ -1,5 +1,5 @@
 import { Class, FIELD_FORM_CONTROL_TOKEN, FIELD_PARENT_CONTROL_TOKEN, Form, FORM_SUBMIT_TOKEN, Group, GroupComponent, Provide } from 'ng-deco-forms';
-import { Action, BtnClass, Checkbox, CheckLabel, Half, Hidden, Hide, Hint, Label, Min, Number, Options, Required, Row, Select, Step, Submit, SubmitComponent, Text, Textarea, Title, Tooltip, TwoThirds, Warn } from 'ng-deco-forms-bootstrap'
+import { Action, BtnClass, Checkbox, CheckLabel, Half, Hidden, Hide, Hint, Label, Min, Number, OnSubmit, Options, Required, Row, Select, Step, SubmitComponent, Text, Textarea, Title, Tooltip, TwoThirds, Warn } from 'ng-deco-forms-bootstrap'
 import { inject } from '@angular/core';
 import { startWith, map } from 'rxjs';
 
@@ -139,7 +139,7 @@ const WHO_MADE = [
 
   @BtnClass('btn-success')
   @Action('Submit')
-  @Submit(submit)
+  @OnSubmit(submit)
   @Form(SubmitComponent)
   export class DemoForm  {
     
